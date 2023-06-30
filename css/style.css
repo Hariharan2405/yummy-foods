@@ -106,7 +106,7 @@ header li:after,.h-ul:after{
 	display:flex;
 	align-items:center;
 	justify-content: space-between;
-	padding: 20px 0;
+	position: relative;
 }
 .book a{
 	background-color:red;
@@ -123,6 +123,7 @@ nav ul{
 }
 #banner{
 	background-color: #eee;
+	padding: 10px;
 }
 .banner-row{
 	width:100%;
@@ -177,6 +178,12 @@ nav ul{
 .banner-btn i{
 	font-size:40px;
 	color:red;
+}
+#about,#gallery,#contact{
+	padding-top: 1em;
+}
+#menu,#event,#chef{
+	padding-top: 4em;
 }
 .about-row{
 	margin:5% auto;
@@ -458,8 +465,8 @@ nav ul{
 	background-color:red;
 	border-radius:50%;
 }
-#event{
-	height:120vh;
+.event-row{
+	padding-bottom: 30px;
 }
 #event .container{
 	width:100%;
@@ -487,7 +494,6 @@ nav ul{
 	background:linear-gradient(#000000b0,#000000b0),url("https://bootstrapmade.com/demo/templates/Yummy/assets/img/events-1.jpg");
 	background-size:cover;
 	background-position:left;
-	height:80vh;
 	border-right:1px solid #fff;
 }
 .event-box2{
@@ -496,7 +502,6 @@ nav ul{
 	background:linear-gradient(#000000b0,#000000b0),url("https://bootstrapmade.com/demo/templates/Yummy/assets/img/events-3.jpg");
 	background-size:cover;
 	background-position:left;
-	height:80vh;
 	border-right:1px solid #fff;
 }
 .event-box3{
@@ -505,7 +510,6 @@ nav ul{
 	background:linear-gradient(#000000b0,#000000b0),url("https://bootstrapmade.com/demo/templates/Yummy/assets/img/events-2.jpg");
 	background-size:cover;
 	background-position:left;
-	height:80vh;
 	border-right:1px solid #fff;
 }
 .event-content{
@@ -789,4 +793,30 @@ iframe{
 }
 .side-button i{
 	color:#fff;
+	z-index: 999;
+}
+.extra ul{
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+}
+.extra{
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	width: 30%;
+	right: 0;
+	transition: all .5s;
+	z-index: 9999;
+}
+.hide{
+	right: -50%!important;
+	transition: all .5s;
+}
+.overflow{
+	overflow: hidden;
+}
+input,textarea{
+	border: 1px solid #ccc!important;
+	outline: none;
 }
